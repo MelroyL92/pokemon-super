@@ -17,11 +17,12 @@ class Pokemon {
         this.move = moves(move);
     }
 
-    public Pokemon (String type, String name, int hp, String level) {
+    public Pokemon (String type, String name, int hp, String level, String move) {
         this.type = type;
         this.name = name;
         this.hp = hp;
         this.level = level;
+        this.move = moves(move);
     }
 
 
