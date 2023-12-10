@@ -5,7 +5,7 @@ public class Water extends Pokemon {
     private String eats;
 
 
-    public Water (String type, String name, int hp, String level, String move, String waterAttack, int specialHp, String eats) {
+    public Water (String type, String name, int hp, String level, String move, String waterAttack, String eats) {
         super(type,name, hp, level, move);
         this.waterAttack = waterAttack;
         this.specialHp = hp * 2;
@@ -24,6 +24,9 @@ public class Water extends Pokemon {
         return specialHp;
     }
 
+    public void setSpecialHp(int specialHp) {
+        this.specialHp = specialHp;
+    }
 
     public String getEats() {
         return eats;

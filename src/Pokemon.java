@@ -1,8 +1,8 @@
 class Pokemon {
 
     private String type;
-    protected String name;
-    private int hp;
+    protected static String name;
+    protected int hp;
     protected String level;
     private String specialAttack;
     private String move;
@@ -41,7 +41,7 @@ class Pokemon {
         this.type = type;
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
