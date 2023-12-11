@@ -24,4 +24,18 @@
     public void setSpecialAttack (String specialAttack) {
         this.specialAttack = specialAttack;
     }
-}
+
+     @Override
+     public String moves(String move){
+         return name + " " + move + " towards the target to attack" ;
+     }
+
+
+     @Override
+     public String toString() {
+         return "Fire{" +
+                 "fireAttack='" + fireAttack + '\'' +
+                 ", specialAttack='" + specialAttack + '\'' +
+                 "} " + super.toString();
+     }
+ }
